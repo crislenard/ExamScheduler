@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_exam_sched"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    tools:context=".EditSched">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="EDIT EXAM SCHEDULE"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#004D40"
+        android:id="@+id/textView4"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/txtAlarmTime1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MMMM DD, YYYY"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/tvDate1"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALARM TIME"
+        android:visibility="gone"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#004D40"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtAlarmTime1" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Code:"
+        android:textSize="20sp"
+        android:textColor="#004D40"
+        android:layout_marginTop="37dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name:"
+        android:textSize="20sp"
+        android:textColor="#004D40"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exam Date:"
+        android:textSize="20sp"
+        android:textColor="#004D40"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes/Pointers:"
+        android:textSize="20sp"
+        android:textColor="#004D40"
+        android:id="@+id/textview9"
+        android:layout_below="@+id/tvTime1"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6"
+        android:id="@+id/etCourseCode1"
+        android:textColorHint="#FFCA28"
+        android:hint="Enter Course Code"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCourseName1"
+        android:hint="Enter Course Name"
+        android:textColorHint="#FFCA28"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="#F9A825"
+        android:text="DELETE EXAM"
+        android:id="@+id/btnDelete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="#F9A825"
+        android:text="UPDATE EXAM"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnUpdate" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:inputType="textMultiLine"
+        android:hint="NOTES/POINTERS HERE"
+        android:textColorHint="#FFCA28"
+        android:id="@+id/etNotes1"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/textview9"
+        android:layout_alignStart="@+id/textview9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exam Time:"
+        android:textSize="20sp"
+        android:textColor="#004D40"
+        android:id="@+id/textview10"
+
+
+        android:layout_below="@+id/tvDate1"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HH:MM TT"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/tvTime1"
+        android:layout_below="@+id/textview10"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
